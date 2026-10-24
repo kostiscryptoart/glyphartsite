@@ -68,7 +68,7 @@
 
   function footer() {
     return el('footer', { class: 'site' },
-      el('span', { text: 'GlyphArt · ASCII and bitmap-glyph generative art' }),
+      el('span', { text: 'GlyphArt · ASCII and bitmap-glyph art' }),
       ext(artist.x, `X ${artist.xHandle}`));
   }
 
