@@ -25,7 +25,7 @@ window.GLYPHART = {
     name: 'GlyphArt',
     bio: [
       'GlyphArt is a body of digital work made mostly from ASCII and bitmap glyphs.',
-      'Most pieces are built from grids of characters. The code is hand-written, from game engines and p5.js sketches to scripted image transformations, and each series is a chance to try a new technique or experiment.',
+      'Most pieces are built from grids of characters. The code is home-grown, spanning everything from game engines and p5.js sketches to scripted image transformations, making each series an experiment in a new technique.',
       'The work moves between PFP collections, interactive generative code and long-form series minted live on chain.',
     ],
     x: 'https://x.com/GlyphPunksNFT',
