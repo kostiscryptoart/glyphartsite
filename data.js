@@ -140,6 +140,34 @@ window.GLYPHART = {
       },
     },
     {
+      slug: 'glyphpunks',
+      name: 'GlyphPunks',
+      tagline: '500 punks in ASCII and bitmap glyphs, exploring different themes, styles and techniques.',
+      description: [
+        'GlyphPunks is a 500-piece collection of punks built from ASCII and bitmap glyphs, and where GlyphArt began.',
+        'The collection grew in waves. The first punks were static glyph portraits; later drops added animation, CRT effects, spectrum palettes and fully generative backgrounds, as the glyph engine behind them was rebuilt again and again.',
+        'With 500 pieces there is no full gallery here. Browse the whole collection on OpenSea, or walk through it in the 3D gallery on oncyber.',
+      ],
+      status: 'secondary',
+      cover: 'assets/glyphpunks/ogmix.gif',
+      // a few samples only: the full set lives on OpenSea and oncyber
+      gallery: [
+        'assets/glyphpunks/ogmix.gif', 'assets/glyphpunks/punk-1.png', 'assets/glyphpunks/punk-42.png',
+        'assets/glyphpunks/punk-100.png', 'assets/glyphpunks/punk-251.gif', 'assets/glyphpunks/punk-351.gif',
+        'assets/glyphpunks/punk-452.gif', 'assets/glyphpunks/1year.gif'
+      ],
+      mint: {
+        platform: 'OpenSea',
+        chain: 'Ethereum',
+        price: null,
+        edition: '500 punks',
+      },
+      links: {
+        opensea: 'https://opensea.io/collection/glyph-punks',
+        oncyber: 'https://oncyber.io/glyphpunks',
+      },
+    },
+    {
       slug: 'dragons',
       name: 'GlyphArt Dragons',
       tagline: 'Four elemental lineages, coiled in glyphs.',
@@ -179,34 +207,6 @@ window.GLYPHART = {
       },
       links: {
         opensea: 'https://opensea.io/collection/postcards-from-the-old-mainframe',
-      },
-    },
-    {
-      slug: 'glyphpunks',
-      name: 'GlyphPunks',
-      tagline: '500 punks in ASCII and bitmap glyphs, exploring different themes, styles and techniques.',
-      description: [
-        'GlyphPunks is a 500-piece collection of punks built from ASCII and bitmap glyphs, and where GlyphArt began.',
-        'The collection grew in waves. The first punks were static glyph portraits; later drops added animation, CRT effects, spectrum palettes and fully generative backgrounds, as the glyph engine behind them was rebuilt again and again.',
-        'With 500 pieces there is no full gallery here. Browse the whole collection on OpenSea, or walk through it in the 3D gallery on oncyber.',
-      ],
-      status: 'secondary',
-      cover: 'assets/glyphpunks/ogmix.gif',
-      // a few samples only: the full set lives on OpenSea and oncyber
-      gallery: [
-        'assets/glyphpunks/ogmix.gif', 'assets/glyphpunks/punk-1.png', 'assets/glyphpunks/punk-42.png',
-        'assets/glyphpunks/punk-100.png', 'assets/glyphpunks/punk-251.gif', 'assets/glyphpunks/punk-351.gif',
-        'assets/glyphpunks/punk-452.gif', 'assets/glyphpunks/1year.gif'
-      ],
-      mint: {
-        platform: 'OpenSea',
-        chain: 'Ethereum',
-        price: null,
-        edition: '500 punks',
-      },
-      links: {
-        opensea: 'https://opensea.io/collection/glyph-punks',
-        oncyber: 'https://oncyber.io/glyphpunks',
       },
     },
   ],
