@@ -184,9 +184,9 @@ window.GLYPHART = {
     {
       slug: 'glyphpunks',
       name: 'GlyphPunks',
-      tagline: '500 ASCII punks, rebuilt over several engine versions.',
+      tagline: '500 punks in ASCII and bitmap glyphs, rebuilt over several engine versions.',
       description: [
-        'GlyphPunks is a 500-piece collection of punks built from ASCII glyphs, and where GlyphArt began.',
+        'GlyphPunks is a 500-piece collection of punks built from ASCII and bitmap glyphs, and where GlyphArt began.',
         'The collection grew in waves. The first punks were static glyph portraits; later drops added animation, CRT effects, spectrum palettes and fully generative backgrounds, as the glyph engine behind them was rebuilt again and again.',
         'With 500 pieces there is no full gallery here. Browse the whole collection on OpenSea, or walk through it in the 3D gallery on oncyber.',
       ],
