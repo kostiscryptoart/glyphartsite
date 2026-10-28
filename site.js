@@ -48,6 +48,21 @@
     return el('img', { src: url(src), alt, loading: eager ? 'eager' : 'lazy', decoding: 'async' });
   }
 
+  // cover image that steps through c.showcase, preloading the next one before swapping
+  function cover(c, alt, eager) {
+    const im = img(c.cover, alt, eager);
+    const list = c.showcase;
+    if (!list || list.length < 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return im;
+    let i = 0;
+    setInterval(() => {
+      if (document.hidden || !im.isConnected) return;
+      const next = new Image();
+      next.onload = () => { i = (i + 1) % list.length; im.src = next.src; };
+      next.src = url(list[(i + 1) % list.length]);
+    }, 4000);
+    return im;
+  }
+
   function badge(c) {
     const s = STATUS[statusOf(c)];
     return el('span', { class: `badge ${s.cls}`, text: s.label });
@@ -411,7 +426,7 @@
   // ---------- pages ----------
   function card(c) {
     return el('a', { class: 'card', href: url(`${c.slug}/index.html`) },
-      el('div', { class: 'thumb' }, img(c.cover, c.name)),
+      el('div', { class: 'thumb' }, cover(c, c.name)),
       el('div', { class: 'cardtext' },
         el('div', { class: 'cardhead' }, el('h3', { text: c.name })),
         el('p', { text: c.tagline }),
@@ -464,7 +479,7 @@
       el('section', { class: 'intro' },
         c.live
           ? el('div', { class: 'feature stage' }, liveFrame(c, c.live.tokens.find(t => t.id === c.live.feature) || c.live.tokens[0], true))
-          : el('div', { class: 'feature' }, img(c.cover, `${c.name} by GlyphArt`, true)),
+          : el('div', { class: 'feature' }, cover(c, `${c.name} by GlyphArt`, true)),
         el('div', { class: 'about' },
           el('h1', { text: c.name }),
           el('p', { class: 'tagline', text: c.tagline }),
