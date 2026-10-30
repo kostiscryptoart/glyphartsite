@@ -34,6 +34,41 @@ window.GLYPHART = {
 
   COLLECTIONS: [
     {
+      slug: 'originals',
+      name: 'GlyphArt Originals',
+      tagline: '1/1 works by GlyphArt, drawn in ASCII and bitmap glyphs.',
+      description: [
+        'Each piece is seen from the world of the old mainframe, the same world where the Glyph Punks live. This is where single pieces from that world are released.',
+      ],
+      status: 'secondary',
+      cover: 'assets/originals/confirmed.gif',
+      mint: {
+        platform: 'OpenSea',
+        chain: 'Ethereum',
+        price: null,
+        edition: 'Single editions',
+      },
+      links: {
+        opensea: 'https://opensea.io/collection/glyphart-originals',
+      },
+      // one entry per token, newest last
+      pieces: [
+        {
+          id: 1,
+          name: 'CONFIRMED',
+          image: 'assets/originals/confirmed.gif',
+          opensea: 'https://opensea.io/item/ethereum/0x209be726c9577a6bcc346a2b5978a54e04cde2b6/1',
+          description: [
+            'The one PENDING board that finally confirms.',
+            'PENDING is a board of transactions that never confirm. CONFIRMED is the 1 of 1 where they do. It is a confirmation terminal in five linked panels: a chain of six blocks, a scrolling mempool, a grid of ASCII loaders and circuit boards, a hash grinder freezing row by row, and a glyph banner reading PENDING.',
+            'Six confirmations arrive in diagonal waves. The loaders wake from grey into colour, the circuit parts light up as each wave lands, and the banner turns to CONFIRMED. The terminal holds, then a scanline sweeps it into the next block and the loop begins again.',
+            'Drawn entirely in ASCII and bitmap glyphs. 128 x 128 cells, 300 frames, 24 second loop.',
+          ],
+          traits: [['Series', 'PENDING'], ['Palette', 'Circuit'], ['Grid', '128 x 128'], ['Medium', 'ASCII and bitmap glyphs']],
+        },
+      ],
+    },
+    {
       slug: 'pending',
       name: 'PENDING',
       tagline: 'A board of transactions that never confirm.',
@@ -63,80 +98,6 @@ window.GLYPHART = {
       links: {
         highlight: 'https://highlight.xyz/mint/01a15b2b-af4a-772b-a266-56b32540e6aa',
         opensea: 'https://opensea.io/collection/pending-616640804',
-      },
-    },
-    {
-      slug: 'dendron',
-      name: 'Dendron',
-      tagline: 'Interactive fractal trees that quiver at your touch.',
-      description: [
-        'Dendron is a generative art project that explores the beauty of natural forms through interactive fractal trees.',
-        'The trees have varied branch growth patterns that are implemented with an L-System.',
-        'Try touching or hovering your mouse over them. The trees respond by quivering their branches and leaves.',
-      ],
-      status: 'live',
-      cover: 'assets/dendron/01.jpg',
-      gallery: [],
-      // the gallery runs each minted token's own code with that token's hash
-      live: {
-        code: 'dendron/live/index.html',
-        feature: 17,
-        hint: 'Every tree below is live code. Hover over it, or touch and drag on a phone, and the branches and leaves quiver.',
-        tokens: [
-        { id: 1, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Black on White · Ellipse' },
-        { id: 2, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Sunset · Triangle' },
-        { id: 3, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Amber Midnight · Triangle' },
-        { id: 4, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Azure Cyan · Ellipse' },
-        { id: 5, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Cyan Noir · Orthogonal' },
-        { id: 6, h: '0x995f57086a78fc154d8a05697a8a5127feb901402edf9201ae439dbaa5a12b9a', traits: 'Amber Midnight · Orthogonal' },
-        { id: 7, h: '0xe908feecfc7d7f4ca7958e18b4a54a435de9b1c210e1ed33e95a0f93088f8257', traits: 'Black on White · Ellipse' },
-        { id: 8, h: '0xe908feecfc7d7f4ca7958e18b4a54a435de9b1c210e1ed33e95a0f93088f8257', traits: 'Sapphire Blaze · Orthogonal' },
-        { id: 9, h: '0xc6bd1e90e1b8d0e5700620a3ea316924bfc74747daf18d0f3b11ff212a413941', traits: 'Turquoise Salmon · Triangle' },
-        { id: 10, h: '0xc6bd1e90e1b8d0e5700620a3ea316924bfc74747daf18d0f3b11ff212a413941', traits: 'Black on White · Triangle' },
-        { id: 11, h: '0xc6bd1e90e1b8d0e5700620a3ea316924bfc74747daf18d0f3b11ff212a413941', traits: 'Twilight Brass · Orthogonal' },
-        { id: 12, h: '0x480b7a596e462bafcc2b7fb1d959da50e144bb0b28ab2a573af676cfa0d63d11', traits: 'Sunset · Triangle' },
-        { id: 13, h: '0x4184ed3fdcf225a28657632fe4cf6a17a92a21bdeecd7a140ac19322db5fae76', traits: 'Azure Cyan · Ellipse' },
-        { id: 14, h: '0x4184ed3fdcf225a28657632fe4cf6a17a92a21bdeecd7a140ac19322db5fae76', traits: 'Rustic Navy · Ellipse' },
-        { id: 15, h: '0x3b151389ba03030550ce38b190fc45d674937a7f252ce0fd306924966e59475c', traits: 'Cyan Noir · Orthogonal' },
-        { id: 16, h: '0x6d4e874494630299ccd6f6507251b82581573354aedd1ca0fb742060ac641518', traits: 'Rustic Navy · Ellipse' },
-        { id: 17, h: '0x6c675774464d0cca8fe4e904bfc07650bb3f57195a45f97f4f7cd0639a975550', traits: 'Inverse Kaleidoscope · Triangle' },
-        { id: 18, h: '0x616552576d65e472d7ab17d97b45061731e062aa37f145ff1e06f624597946da', traits: 'Rustic Navy · Orthogonal' },
-        { id: 19, h: '0x0bbd992653bd510273c7c8b72929372767cb76af8e19b2311b61f7663a83240e', traits: 'Desert · Orthogonal' },
-        ],
-      },
-      mint: {
-        platform: 'Highlight',
-        chain: 'Base',
-        price: '0.005 ETH',
-        edition: 'Generative series of 1024',
-        contract: null,
-      },
-      links: {
-        highlight: 'https://highlight.xyz/mint/019f5ddf-25c5-73e9-b0b6-fb9655e035b3',
-        opensea: null,
-      },
-    },
-    {
-      slug: 'phlow',
-      name: 'Phlow',
-      tagline: 'Glyph groups that live and die by survival rules.',
-      description: [
-        'Phlow is a generative art project that explores the fluidity of visual dynamics through a grid of evolving ASCII glyph groups.',
-        'The grid serves as a canvas where the glyph groups interact based on survival rules, creating ever-changing compositions.',
-      ],
-      status: 'live',
-      cover: 'assets/phlow/05.gif',
-      gallery: [], // the gallery shows every minted piece (see onchain)
-      mint: {
-        platform: 'Highlight',
-        chain: 'Ethereum',
-        price: '0.01 ETH',
-        edition: 'Generative series of 256',
-      },
-      onchain: { chain: 'ethereum', contract: '0xebcd4cdefeec890e436168de137fb5852642f329', highlight: '019f5ddf-5140-71c2-ba8f-580468dd93f8', unit: 'piece' },
-      links: {
-        highlight: 'https://highlight.xyz/mint/019f5ddf-5140-71c2-ba8f-580468dd93f8',
-        opensea: 'https://opensea.io/collection/phlow-1',
       },
     },
     {
@@ -207,39 +168,78 @@ window.GLYPHART = {
       },
     },
     {
-      slug: 'originals',
-      name: 'GlyphArt Originals',
-      tagline: '1/1 works by GlyphArt, drawn in ASCII and bitmap glyphs.',
+      slug: 'phlow',
+      name: 'Phlow',
+      tagline: 'Glyph groups that live and die by survival rules.',
       description: [
-        'Each piece is seen from the world of the old mainframe, the same world where the Glyph Punks live. This is where single pieces from that world are released.',
+        'Phlow is a generative art project that explores the fluidity of visual dynamics through a grid of evolving ASCII glyph groups.',
+        'The grid serves as a canvas where the glyph groups interact based on survival rules, creating ever-changing compositions.',
       ],
-      status: 'secondary',
-      cover: 'assets/originals/confirmed.gif',
+      status: 'live',
+      cover: 'assets/phlow/05.gif',
+      gallery: [], // the gallery shows every minted piece (see onchain)
       mint: {
-        platform: 'OpenSea',
+        platform: 'Highlight',
         chain: 'Ethereum',
-        price: null,
-        edition: 'Single editions',
+        price: '0.01 ETH',
+        edition: 'Generative series of 256',
+      },
+      onchain: { chain: 'ethereum', contract: '0xebcd4cdefeec890e436168de137fb5852642f329', highlight: '019f5ddf-5140-71c2-ba8f-580468dd93f8', unit: 'piece' },
+      links: {
+        highlight: 'https://highlight.xyz/mint/019f5ddf-5140-71c2-ba8f-580468dd93f8',
+        opensea: 'https://opensea.io/collection/phlow-1',
+      },
+    },
+    {
+      slug: 'dendron',
+      name: 'Dendron',
+      tagline: 'Interactive fractal trees that quiver at your touch.',
+      description: [
+        'Dendron is a generative art project that explores the beauty of natural forms through interactive fractal trees.',
+        'The trees have varied branch growth patterns that are implemented with an L-System.',
+        'Try touching or hovering your mouse over them. The trees respond by quivering their branches and leaves.',
+      ],
+      status: 'live',
+      cover: 'assets/dendron/01.jpg',
+      gallery: [],
+      // the gallery runs each minted token's own code with that token's hash
+      live: {
+        code: 'dendron/live/index.html',
+        feature: 17,
+        hint: 'Every tree below is live code. Hover over it, or touch and drag on a phone, and the branches and leaves quiver.',
+        tokens: [
+        { id: 1, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Black on White · Ellipse' },
+        { id: 2, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Sunset · Triangle' },
+        { id: 3, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Amber Midnight · Triangle' },
+        { id: 4, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Azure Cyan · Ellipse' },
+        { id: 5, h: '0xf5dd70f7f874606d6335976fecf08d1d081739ee2403e326775aedd07af7be38', traits: 'Cyan Noir · Orthogonal' },
+        { id: 6, h: '0x995f57086a78fc154d8a05697a8a5127feb901402edf9201ae439dbaa5a12b9a', traits: 'Amber Midnight · Orthogonal' },
+        { id: 7, h: '0xe908feecfc7d7f4ca7958e18b4a54a435de9b1c210e1ed33e95a0f93088f8257', traits: 'Black on White · Ellipse' },
+        { id: 8, h: '0xe908feecfc7d7f4ca7958e18b4a54a435de9b1c210e1ed33e95a0f93088f8257', traits: 'Sapphire Blaze · Orthogonal' },
+        { id: 9, h: '0xc6bd1e90e1b8d0e5700620a3ea316924bfc74747daf18d0f3b11ff212a413941', traits: 'Turquoise Salmon · Triangle' },
+        { id: 10, h: '0xc6bd1e90e1b8d0e5700620a3ea316924bfc74747daf18d0f3b11ff212a413941', traits: 'Black on White · Triangle' },
+        { id: 11, h: '0xc6bd1e90e1b8d0e5700620a3ea316924bfc74747daf18d0f3b11ff212a413941', traits: 'Twilight Brass · Orthogonal' },
+        { id: 12, h: '0x480b7a596e462bafcc2b7fb1d959da50e144bb0b28ab2a573af676cfa0d63d11', traits: 'Sunset · Triangle' },
+        { id: 13, h: '0x4184ed3fdcf225a28657632fe4cf6a17a92a21bdeecd7a140ac19322db5fae76', traits: 'Azure Cyan · Ellipse' },
+        { id: 14, h: '0x4184ed3fdcf225a28657632fe4cf6a17a92a21bdeecd7a140ac19322db5fae76', traits: 'Rustic Navy · Ellipse' },
+        { id: 15, h: '0x3b151389ba03030550ce38b190fc45d674937a7f252ce0fd306924966e59475c', traits: 'Cyan Noir · Orthogonal' },
+        { id: 16, h: '0x6d4e874494630299ccd6f6507251b82581573354aedd1ca0fb742060ac641518', traits: 'Rustic Navy · Ellipse' },
+        { id: 17, h: '0x6c675774464d0cca8fe4e904bfc07650bb3f57195a45f97f4f7cd0639a975550', traits: 'Inverse Kaleidoscope · Triangle' },
+        { id: 18, h: '0x616552576d65e472d7ab17d97b45061731e062aa37f145ff1e06f624597946da', traits: 'Rustic Navy · Orthogonal' },
+        { id: 19, h: '0x0bbd992653bd510273c7c8b72929372767cb76af8e19b2311b61f7663a83240e', traits: 'Desert · Orthogonal' },
+        ],
+      },
+      mint: {
+        platform: 'Highlight',
+        chain: 'Base',
+        price: '0.005 ETH',
+        edition: 'Generative series of 1024',
+        contract: null,
       },
       links: {
-        opensea: 'https://opensea.io/collection/glyphart-originals',
+        highlight: 'https://highlight.xyz/mint/019f5ddf-25c5-73e9-b0b6-fb9655e035b3',
+        opensea: null,
       },
-      // one entry per token, newest last
-      pieces: [
-        {
-          id: 1,
-          name: 'CONFIRMED',
-          image: 'assets/originals/confirmed.gif',
-          opensea: 'https://opensea.io/item/ethereum/0x209be726c9577a6bcc346a2b5978a54e04cde2b6/1',
-          description: [
-            'The one PENDING board that finally confirms.',
-            'PENDING is a board of transactions that never confirm. CONFIRMED is the 1 of 1 where they do. It is a confirmation terminal in five linked panels: a chain of six blocks, a scrolling mempool, a grid of ASCII loaders and circuit boards, a hash grinder freezing row by row, and a glyph banner reading PENDING.',
-            'Six confirmations arrive in diagonal waves. The loaders wake from grey into colour, the circuit parts light up as each wave lands, and the banner turns to CONFIRMED. The terminal holds, then a scanline sweeps it into the next block and the loop begins again.',
-            'Drawn entirely in ASCII and bitmap glyphs. 128 x 128 cells, 300 frames, 24 second loop.',
-          ],
-          traits: [['Series', 'PENDING'], ['Palette', 'Circuit'], ['Grid', '128 x 128'], ['Medium', 'ASCII and bitmap glyphs']],
-        },
-      ],
     },
     {
       slug: 'dragons',

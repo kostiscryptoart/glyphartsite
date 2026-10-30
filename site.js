@@ -450,7 +450,6 @@
   function home() {
     const now = COLLECTIONS.filter(c => statusOf(c) === 'live');
     const soon = COLLECTIONS.filter(c => ['upcoming', 'dev'].includes(statusOf(c)));
-    const released = COLLECTIONS.filter(c => !now.includes(c) && !soon.includes(c));
 
     const nowItem = (c) => el('li', { class: 'now-item' },
       el('a', { class: 'now-thumb', href: url(`${c.slug}/index.html`) }, img(c.cover, c.name, true)),
@@ -482,7 +481,7 @@
         ] : null),
       el('section', { 'aria-labelledby': 'col-h' },
         el('h2', { class: 'label', id: 'col-h', text: 'Collections' }),
-        el('div', { class: 'cards' }, [...now, ...released, ...soon].map(card))),
+        el('div', { class: 'cards' }, COLLECTIONS.map(card))),
     ];
   }
 
