@@ -209,10 +209,9 @@ window.GLYPHART = {
     {
       slug: 'originals',
       name: 'GlyphArt Originals',
-      tagline: 'One of one pieces in ASCII and bitmap glyphs.',
+      tagline: '1/1 works by GlyphArt, drawn in ASCII and bitmap glyphs.',
       description: [
-        'GlyphArt Originals collects the single editions: one of one pieces that stand on their own or answer one of the series.',
-        'Each piece is listed below with its full description.',
+        'Each piece is seen from the world of the old mainframe, the same world where the Glyph Punks live. This is where single pieces from that world are released.',
       ],
       status: 'secondary',
       cover: 'assets/originals/confirmed.gif',
