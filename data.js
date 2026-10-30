@@ -101,11 +101,34 @@ window.GLYPHART = {
       },
     },
     {
+      slug: 'phlow',
+      name: 'Phlow',
+      tagline: 'Glyph groups that live and die by survival rules.',
+      description: [
+        'Phlow is a generative art project that explores the fluidity of visual dynamics through a grid of evolving ASCII glyph groups.',
+        'The grid serves as a canvas where the glyph groups interact based on survival rules, creating ever-changing compositions.',
+      ],
+      status: 'live',
+      cover: 'assets/phlow/05.gif',
+      gallery: [], // the gallery shows every minted piece (see onchain)
+      mint: {
+        platform: 'Highlight',
+        chain: 'Ethereum',
+        price: '0.01 ETH',
+        edition: 'Generative series of 256',
+      },
+      onchain: { chain: 'ethereum', contract: '0xebcd4cdefeec890e436168de137fb5852642f329', highlight: '019f5ddf-5140-71c2-ba8f-580468dd93f8', unit: 'piece' },
+      links: {
+        highlight: 'https://highlight.xyz/mint/019f5ddf-5140-71c2-ba8f-580468dd93f8',
+        opensea: 'https://opensea.io/collection/phlow-1',
+      },
+    },
+    {
       slug: 'glyphpunks',
-      name: 'GlyphPunks',
+      name: 'Glyph Punks',
       tagline: '500 punks in ASCII and bitmap glyphs, exploring different themes, styles and techniques.',
       description: [
-        'GlyphPunks is a 500-piece collection of punks built from ASCII and bitmap glyphs, and where GlyphArt began.',
+        'Glyph Punks is a 500-piece collection of punks built from ASCII and bitmap glyphs, and where GlyphArt began.',
         'The collection grew in waves. The first punks were static glyph portraits; later drops added animation, CRT effects, spectrum palettes and fully generative backgrounds, as the glyph engine behind them was rebuilt again and again.',
         'With 500 pieces there is no full gallery here. Browse the whole collection on OpenSea, or walk through it in the 3D gallery on oncyber.',
       ],
@@ -165,29 +188,6 @@ window.GLYPHART = {
       links: {
         opensea: 'https://opensea.io/collection/glyph-punks',
         oncyber: 'https://oncyber.io/glyphpunks',
-      },
-    },
-    {
-      slug: 'phlow',
-      name: 'Phlow',
-      tagline: 'Glyph groups that live and die by survival rules.',
-      description: [
-        'Phlow is a generative art project that explores the fluidity of visual dynamics through a grid of evolving ASCII glyph groups.',
-        'The grid serves as a canvas where the glyph groups interact based on survival rules, creating ever-changing compositions.',
-      ],
-      status: 'live',
-      cover: 'assets/phlow/05.gif',
-      gallery: [], // the gallery shows every minted piece (see onchain)
-      mint: {
-        platform: 'Highlight',
-        chain: 'Ethereum',
-        price: '0.01 ETH',
-        edition: 'Generative series of 256',
-      },
-      onchain: { chain: 'ethereum', contract: '0xebcd4cdefeec890e436168de137fb5852642f329', highlight: '019f5ddf-5140-71c2-ba8f-580468dd93f8', unit: 'piece' },
-      links: {
-        highlight: 'https://highlight.xyz/mint/019f5ddf-5140-71c2-ba8f-580468dd93f8',
-        opensea: 'https://opensea.io/collection/phlow-1',
       },
     },
     {
