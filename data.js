@@ -243,6 +243,7 @@ window.GLYPHART = {
     },
     {
       slug: 'dragons',
+      hidden: true,
       name: 'GlyphArt Dragons',
       tagline: 'Four elemental lineages, coiled in glyphs.',
       description: [
