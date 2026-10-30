@@ -372,7 +372,21 @@
   }
 
   // ---------- gallery with lightbox ----------
+  // one of one collections: every piece gets its own block with the full description
+  function pieces(c) {
+    return el('section', { class: 'gallery-wrap', 'aria-labelledby': 'pieces-h' },
+      el('h2', { class: 'label', id: 'pieces-h', text: 'The pieces' }),
+      c.pieces.map((p, i) => el('article', { class: 'original', id: `piece-${p.id}` },
+        el('div', { class: 'feature' }, img(p.image, `${p.name} by GlyphArt`, i === 0)),
+        el('div', { class: 'about' },
+          el('h3', { text: p.name }),
+          p.description.map(t => el('p', { text: t })),
+          p.traits ? el('dl', { class: 'meta' }, p.traits.map(([k, v]) => [el('dt', { text: k }), el('dd', { text: v })])) : null,
+          el('div', { class: 'links' }, ext(p.opensea, 'VIEW ON OPENSEA →', 'btn primary'))))));
+  }
+
   function gallery(c) {
+    if (c.pieces) return pieces(c);
     if (c.live) return liveGallery(c);
     if (c.onchain) return chainGallery(c);
     if (!c.gallery || !c.gallery.length) return null;
@@ -476,8 +490,9 @@
     document.title = `${c.name} · GlyphArt`;
     return [
       el('p', { class: 'crumbs' }, el('a', { href: url('index.html'), text: 'GlyphArt' }), ' / ', c.name),
-      el('section', { class: 'intro' },
-        c.live
+      el('section', { class: c.pieces ? 'intro solo' : 'intro' },
+        c.pieces ? null
+        : c.live
           ? el('div', { class: 'feature stage' }, liveFrame(c, c.live.tokens.find(t => t.id === c.live.feature) || c.live.tokens[0], true))
           : el('div', { class: 'feature' }, cover(c, `${c.name} by GlyphArt`, true)),
         el('div', { class: 'about' },

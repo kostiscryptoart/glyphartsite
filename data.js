@@ -207,6 +207,42 @@ window.GLYPHART = {
       },
     },
     {
+      slug: 'originals',
+      name: 'GlyphArt Originals',
+      tagline: 'One of one pieces in ASCII and bitmap glyphs.',
+      description: [
+        'GlyphArt Originals collects the single editions: one of one pieces that stand on their own or answer one of the series.',
+        'Each piece is listed below with its full description.',
+      ],
+      status: 'secondary',
+      cover: 'assets/originals/confirmed.gif',
+      mint: {
+        platform: 'OpenSea',
+        chain: 'Ethereum',
+        price: null,
+        edition: 'Single editions',
+      },
+      links: {
+        opensea: 'https://opensea.io/collection/glyphart-originals',
+      },
+      // one entry per token, newest last
+      pieces: [
+        {
+          id: 1,
+          name: 'CONFIRMED',
+          image: 'assets/originals/confirmed.gif',
+          opensea: 'https://opensea.io/item/ethereum/0x209be726c9577a6bcc346a2b5978a54e04cde2b6/1',
+          description: [
+            'The one PENDING board that finally confirms.',
+            'PENDING is a board of transactions that never confirm. CONFIRMED is the 1 of 1 where they do. It is a confirmation terminal in five linked panels: a chain of six blocks, a scrolling mempool, a grid of ASCII loaders and circuit boards, a hash grinder freezing row by row, and a glyph banner reading PENDING.',
+            'Six confirmations arrive in diagonal waves. The loaders wake from grey into colour, the circuit parts light up as each wave lands, and the banner turns to CONFIRMED. The terminal holds, then a scanline sweeps it into the next block and the loop begins again.',
+            'Drawn entirely in ASCII and bitmap glyphs. 128 x 128 cells, 300 frames, 24 second loop.',
+          ],
+          traits: [['Series', 'PENDING'], ['Palette', 'Circuit'], ['Grid', '128 x 128'], ['Medium', 'ASCII and bitmap glyphs']],
+        },
+      ],
+    },
+    {
       slug: 'dragons',
       name: 'GlyphArt Dragons',
       tagline: 'Four elemental lineages, coiled in glyphs.',
